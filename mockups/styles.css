@@ -1,0 +1,195 @@
+/* Configuración inicial */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+/* Barra de navegación */
+
+.navbar {
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #ff2f8b;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 15px;
+    border-radius: 4px;
+}
+
+.nav-links a.active {
+    background-color: #ff2f8b;
+    padding: 6px 15px;
+    border-radius: 4px;
+}
+
+.login-link {
+    color: #ff2f8b;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* Contenido general */
+
+.container {
+    padding: 40px;
+}
+
+.container input[type="number"] {
+    width: 40px;
+}
+
+.container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.card {
+    background: #dcdcdc;
+    padding: 40px;
+    border-radius: 15px;
+    width: 600px;
+    margin: auto;
+}
+
+.link {
+    color: #ff2f8b;
+}
+
+/* Barra sobre tablas */
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dcdcdc;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.top-left,
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+select,.date-input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #efefef;
+}
+
+.period-selector {
+    display: flex;
+    background-color: #efefef;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.period-selector span {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Títulos */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+
+.btn {
+    background-color: #ff2f8b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Inputs */
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.container input[type="number"] {
+    width: 40px;
+    
+}
+
+.container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* Tablas */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #dcdcdc;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #cfcfcf;
+}
+
+.section-title {
+    color: #ff2f8b;
+    margin-bottom: 15px;
+}
+
+.section-welcome {
+    color: #ff2f8b;
+    text-align: center;
+}

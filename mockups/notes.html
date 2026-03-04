@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="dashboard.html" class="logo">CESDE</a>
+
+    <div class="nav-links">
+        <a class="active" href="#">Registro de notas</a>
+        <a href="assists.html">Asistencias</a>
+    </div>
+
+    <div>
+        <a href="login.html" class="login-link">Iniciar sesión</a>
+    </div>
+</div>
+
+<div class="top-bar">
+
+    <div class="top-left">
+        <label>Curso:</label>
+        <select>
+            <option>Seleccionar</option>
+            <option>Programación</option>
+            <option>Diseño</option>
+            <option>Marketing</option>
+            <option>Administración</option>
+        </select>
+    </div>
+
+    <div class="top-right">
+        <label>Periodo:</label>
+        <input type="radio" class="period-selector" name="periodo" value="1" checked> 1
+        <input type="radio" class="period-selector" name="periodo" value="2"> 2
+        <input type="radio" class="period-selector" name="periodo" value="3"> 3
+    </div>
+
+</div>
+
+<div class="container">
+
+    <table>
+        <tr>
+            <th>Estudiante</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th>Nota 3</th>
+            <th>Definitiva</th>
+        </tr>
+
+        <tr>
+            <td>Julian Vargas</td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+        </tr>
+
+        <tr>
+            <td>Mariana Giraldo</td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+        </tr>
+
+        <tr>
+            <td>Nicol Bolivar</td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+        </tr>
+
+        <tr>
+            <td>Jesus Torre</td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+            <td><input type="number" min="0" max="5"></td>
+        </tr>
+    </table>
+
+    <div class="center">
+        <button class="btn">Guardar</button>
+    </div>
+
+</div>
+
+</body>
+</html>

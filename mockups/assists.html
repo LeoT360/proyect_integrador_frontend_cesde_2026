@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Asistencias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="dashboard.html" class="logo">CESDE</a>
+
+    <div class="nav-links">
+        <a href="notes.html">Registro de notas</a>
+        <a class="active" href="#">Asistencias</a>
+    </div>
+
+    <div>
+        <a href="login.html" class="login-link">Iniciar sesión</a>
+    </div>
+</div>
+
+<div class="top-bar">
+
+    <div class="top-left">
+        <label>Curso:</label>
+        <select>
+            <option>Seleccionar</option>
+            <option>Programación</option>
+            <option>Diseño</option>
+            <option>Marketing</option>
+            <option>Administración</option>
+        </select>
+    </div>
+
+    <div class="top-right">
+        <label>Fecha:</label>
+        <input type="date" class="date-input">
+    </div>
+
+</div>
+
+<div class="container">
+
+    <table>
+        <tr>
+            <th>Estudiante</th>
+            <th>Presente</th>
+            <th>Ausente</th>
+        </tr>
+
+        <tr>
+            <td>Julian Vargas</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+        <tr>
+            <td>Mariana Giraldo</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+        <tr>
+            <td>Nicol Bolivar</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+        <tr>
+            <td>Jesus Torre</td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+        </tr>
+    </table>
+
+    <div class="center">
+        <button class="btn">Guardar</button>
+    </div>
+
+</div>
+
+</body>
+</html>
