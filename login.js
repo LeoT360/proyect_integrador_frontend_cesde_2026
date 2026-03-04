@@ -23,5 +23,26 @@ function iniciarSesion() {
         console.log("Usuario ingresado: ", usuario);
         console.log("Contraseña ingresada: ", contrasena);
 
+        // Verificación de datos correctos
+        if (usuario === usuarioCorrecto && contrasena === contrasenaCorrecta) {
+            alert("Acceso concedido. Bienvenido " + usuario);
+            console.log("Inicio de sesión exitoso");
+            intentos = 0;
+            return;
+        } 
+        else {
+            intentos++;
+            if (intentos >= maxIntentos) {
+                bloqueado = true;
+                alert("Cuenta bloqueada. Demasiados intentos fallidos");
+                console.log("Usuario bloqueado por exceso de intentos");
+
+                const boton = document.querySelector('.btn-login');
+            } 
+            else {
+                alert("Datos incorrectos. Intento " + intentos + "/" + maxIntentos);
+                console.log("Intento fallido número: ", intentos);
+            }
+        }
     }
 }
