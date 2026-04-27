@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institución Educativa Solaris</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="main-container">
+        <aside class="brand-section">
+            <h3>INSTITUCIÓN EDUCATIVA</h3>
+            <div class="sun-icon"><img src="logosolaris.svg" alt="Logo de Solaris" width="400" height="100"></div>
+        </aside>
+
+        <section class="content-section">
+            <section class="form-column">
+                <h2 id="form-title">Registro de Usuario</h2>
+                <p class="subtitle">Ingresa los datos para el registro</p>
+                
+                <input type="hidden" id="edit-id">
+                <div class="input-group">
+                    <input type="text" id="nombre" placeholder="Nombre completo">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="documento" placeholder="Número de documento">
+                </div>
+                <div class="input-group">
+                    <select id="rol">
+                        <option value="" disabled selected>Seleccione un rol</option>
+                        <option value="Profesor">Profesor</option>
+                        <option value="Estudiante">Estudiante</option>
+                    </select>
+                </div>
+                
+                <button id="btn-registrar" class="btn-main">Registrar</button>
+                <button id="btn-cancelar" class="btn-cancel hidden">Cancelar Edición</button>
+            </section>
+
+            <section class="table-column">
+                <h2>Usuarios Registrados</h2>
+                <div class="table-wrapper">
+                    <table id="tabla-usuarios">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Doc.</th>
+                                <th>Rol</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lista-usuarios">
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
