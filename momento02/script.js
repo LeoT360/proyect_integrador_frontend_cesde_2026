@@ -65,3 +65,75 @@ btnRegistrar.addEventListener('click', function() {
     guardarDatos();
     limpiarFormulario();
 });
+
+window.editarUsuario = function(id) {
+    // Buscamos el usuario con un ciclo for
+    let usuarioAEditar;
+    for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i].id === id) {
+            usuarioAEditar = usuarios[i];
+        }
+    }
+
+    document.getElementById('nombre').value = usuarioAEditar.nombre;
+    document.getElementById('documento').value = usuarioAEditar.documento;
+    document.getElementById('rol').value = usuarioAEditar.rol;
+
+    editId = id;
+
+    formTitle.innerText = "Editar Usuario #" + id;
+    btnRegistrar.innerText = "Guardar";
+    btnCancelar.classList.remove('hidden');
+};
+
+function finalizarEdicion() {
+    formTitle.innerText = "Registro de Usuario";
+    btnRegistrar.innerText = "Registrar";
+    btnCancelar.classList.add('hidden');
+    limpiarFormulario();
+}
+
+btnCancelar.addEventListener('click', finalizarEdicion);
+
+function renderizarTabla() {
+    listaUsuarios.innerHTML = '';
+
+    for (let i = 0; i < usuarios.length; i++) {
+        let u = usuarios[i];
+        listaUsuarios.innerHTML += `
+            <tr>
+                <td>${u.id}</td>
+                <td>${u.nombre}</td>
+                <td>${u.documento}</td>
+                <td><strong>${u.rol}</strong></td>
+                <td>
+                    <button class="btn-edit" onclick="editarUsuario(${u.id})">✏️</button>
+                    <button class="btn-delete" onclick="eliminarUsuario(${u.id})">🗑️</button>
+                </td>
+            </tr>
+        `;
+    }
+}
+
+window.eliminarUsuario = function(id) {
+    if (confirm('¿Seguro que deseas eliminar este usuario?')) {
+        
+        let nuevaLista = [];
+        
+        for (let i = 0; i < usuarios.length; i++) {
+            if (usuarios[i].id !== id) {
+                nuevaLista.push(usuarios[i]);
+            }
+        }
+        
+        usuarios = nuevaLista;
+
+        if (editId === id) {
+            finalizarEdicion();
+        }
+
+        guardarDatos(); 
+    }
+};
+
+renderizarTabla();
