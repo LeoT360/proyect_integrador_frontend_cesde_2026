@@ -1,0 +1,163 @@
+:root {
+    --amarillo-bg: #fff9c4;
+    --naranja-accent: #ffb74d;
+    --naranja-hover: #ffa726;
+    --cancel-accent: #ff7043;
+    --cancel-hover: #da521d;
+    --white: #ffffff;
+    --gray-bg: #fdfdfd;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--amarillo-bg);
+    background: linear-gradient(135deg, #fff9c4 0%, #ffe0b2 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    width: 95%;
+    max-width: 1200px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.4);
+    overflow: hidden;
+}
+
+/* Sección de Marca (Izquierda) */
+.brand-section {
+    flex: 0.7;
+    background: var(--naranja-accent);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.brand-section h1 { font-size: 3rem; margin: 0; letter-spacing: 5px; text-transform: uppercase; }
+.brand-section p { font-size: 0.8rem; letter-spacing: 3px; opacity: 0.9; }
+.brand-footer { margin-top: 50px; font-size: 0.7rem; opacity: 0.7; }
+
+/* Sección de Contenido (Derecha) */
+.content-section {
+    flex: 2.3;
+    background: var(--white);
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+}
+
+.form-column, .table-column { flex: 1; }
+.table-column { flex: 1.4; border-left: 1px solid #eee; padding-left: 30px; }
+
+h2 { color: #555; margin-bottom: 5px; font-size: 1.5rem; }
+.subtitle { color: #aaa; font-size: 0.85rem; margin-bottom: 25px; }
+
+/* Inputs y Botones */
+input, select {
+    width: 88%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 1.5px solid #f0f0f0;
+    background: #fafafa;
+    font-family: inherit;
+}
+
+select { 
+    width: 100%; 
+    color: #555;}
+
+input:focus, select:focus {
+    border-color: var(--naranja-accent);
+    background: #fff;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(255, 183, 77, 0.15);
+}
+
+.btn-main {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px;
+    background: var(--naranja-accent);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-main:hover {
+    background: var(--naranja-hover);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 183, 77, 0.2);
+}
+
+.btn-cancel {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 20px;
+    background: var(--cancel-accent);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background: var(--cancel-hover);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 183, 77, 0.2);
+}
+
+/* Tabla */
+.table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 15px;
+}
+
+table { width: 100%; 
+    border-collapse: collapse; 
+}
+
+th { 
+    text-align: left; 
+    padding: 12px; 
+    border-bottom: 2px solid var(--amarillo-bg); 
+    color: #888; 
+    font-size: 0.8rem; 
+}
+
+td { padding: 12px; 
+    border-bottom: 1px solid #f9f9f9; 
+    font-size: 0.85rem; 
+}
+
+.btn-edit, .btn-delete {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn-edit:hover, .btn-delete:hover { 
+    transform: scale(1.3);
+}
+
+.hidden {
+    display: none; 
+}
