@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/solaris-illustration.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_dashboard.css">
+    <title>Inicio - Solaris</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="dashboard_student.html"><img src="images/solaris-logo.svg" alt="Solaris"></a>
+            <button class="nav-toggle" type="button">
+                <img src="images/menu-icon.svg" alt="Menú">
+            </button>
+            <ul>
+                <li><a href="dashboard_student.html" class="active">Inicio</a></li>
+                <li><a href="notes_student.html">Notas</a></li>
+                <li><a href="attendance_student.html">Asistencias</a></li>
+                <li><a href="contact_student.html">Contacto</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="index.html" class="btn btn-secondary" id="btnLogout">Cerrar Sesión</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <h1>Bienvenido,<br><span>Estudiante</span></h1>
+                    <p>Consulta tus notas, revisa tu asistencia y mantente al día con tu progreso académico.</p>
+                    <div class="hero-actions">
+                        <a href="notes_student.html" class="btn btn-primary btn-lg">Ver mis notas</a>
+                        <a href="attendance_student.html" class="btn btn-secondary btn-lg">Ver asistencias</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="images/student-illustration.svg" alt="Panel del Estudiante">
+                </div>
+            </div>
+        </section>
+
+        <div class="dash-stats">
+            <article class="stat-card">
+                <span class="icon"><img src="images/notes-icon.svg" alt=""></span>
+                <span>0</span>
+                    <p>Promedio general</p>
+            </article>
+            <article class="stat-card">
+                <span class="icon"><img src="images/attendance-icon.svg" alt=""></span>
+                <span>0%</span>
+                    <p>Asistencia</p>
+            </article>
+            <article class="stat-card">
+                <span class="icon"><img src="images/subject-matter-icon.svg" alt=""></span>
+                <span>0</span>
+                    <p>Materias</p>
+            </article>
+        </div>
+
+        <div class="dashboard-section">
+            <h2 class="dashboard-section-title">Mis herramientas</h2>
+            <div class="cards">
+                    <a href="notes_student.html" class="card">
+                        <span class="icon"><img src="images/notes-icon.svg" alt=""></span>
+                        <h3>Mis Notas</h3>
+                        <p>Consulta tu historial de calificaciones por materia y período académico.</p>
+                    </a>
+                    <a href="attendance_student.html" class="card">
+                        <span class="icon"><img src="images/attendance-icon.svg" alt=""></span>
+                        <h3>Mis Asistencias</h3>
+                        <p>Revisa tu registro de asistencias y mantente al tanto de tus faltas.</p>
+                    </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/solaris-logo.svg" alt="Solaris Logo">
+                <p>Inspira · Aprende · Transforma</p>
+            </div>
+            <div class="footer-links">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="dashboard_student.html">Inicio</a></li>
+                    <li><a href="notes_student.html">Notas</a></li>
+                    <li><a href="attendance_student.html">Asistencias</a></li>
+                    <li><a href="contact_student.html">Contacto</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="contact_student.html">Calle de la Luz 123, Ciudad del Sol</a></li>
+                    <li><a href="tel:+570000000000">+57 (000) 000-0000</a></li>
+                    <li><a href="mailto:info@solaris.edu.co">info@solaris.edu.co</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2026 Solaris - Proyecto Integrador Frontend · Cesde</p>
+    </footer>
+</body>
+<script src="scripts/main.js"></script>
+</html>

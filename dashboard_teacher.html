@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/solaris-illustration.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_dashboard.css">
+    <title>Inicio - Solaris</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="dashboard_teacher.html"><img src="images/solaris-logo.svg" alt="Solaris"></a>
+            <button class="nav-toggle" type="button">
+                <img src="images/menu-icon.svg" alt="Menú">
+            </button>
+            <ul>
+                <li><a href="dashboard_teacher.html" class="active">Inicio</a></li>
+                <li><a href="notes_teacher.html">Notas</a></li>
+                <li><a href="attendance_teacher.html">Asistencias</a></li>
+                <li><a href="contact_teacher.html">Contacto</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="index.html" class="btn btn-secondary" id="btnLogout">Cerrar Sesión</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <h1>Bienvenido,<br><span>Docente</span></h1>
+                    <p>Registra notas, controla asistencias y gestiona tus grupos académicos desde aquí.</p>
+                    <div class="hero-actions">
+                        <a href="notes_teacher.html" class="btn btn-primary btn-lg">Registrar notas</a>
+                        <a href="attendance_teacher.html" class="btn btn-secondary btn-lg">Tomar asistencia</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="images/teacher-illustration.svg" alt="Panel del Docente">
+                </div>
+            </div>
+        </section>
+
+        <div class="dash-stats">
+            <article class="stat-card">
+                <span class="icon"><img src="images/student-icon.svg" alt=""></span>
+                <span>0</span>
+                    <p>Estudiantes a cargo</p>
+            </article>
+            <article class="stat-card">
+                <span class="icon"><img class="icon" src="images/users-icon.svg" alt=""></span>
+                <span>0</span>
+                    <p>Grupos</p>
+            </article>
+            <article class="stat-card">
+                <span class="icon"><img src="images/attendance-icon.svg" alt=""></span>
+                <span>0%</span>
+                    <p>Asistencias promedio</p>
+            </article>
+        </div>
+
+        <div class="dashboard-section">
+            <h2 class="dashboard-section-title">Mis herramientas</h2>
+            <div class="cards">
+                    <a href="notes_teacher.html" class="card">
+                        <span class="icon"><img src="images/notes-icon.svg" alt=""></span>
+                        <h3>Notas</h3>
+                        <p>Registra y actualiza las calificaciones de tus estudiantes por materia y período.</p>
+                    </a>
+                    <a href="attendance_teacher.html" class="card">
+                        <span class="icon"><img src="images/attendance-icon.svg" alt=""></span>
+                        <h3>Asistencias</h3>
+                        <p>Lleva el registro diario de asistencia de cada uno de tus grupos.</p>
+                    </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/solaris-logo.svg" alt="Solaris Logo">
+                <p>Inspira · Aprende · Transforma</p>
+            </div>
+            <div class="footer-links">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="dashboard_teacher.html">Inicio</a></li>
+                    <li><a href="notes_teacher.html">Notas</a></li>
+                    <li><a href="attendance_teacher.html">Asistencias</a></li>
+                    <li><a href="contact_teacher.html">Contacto</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="contact_teacher.html">Calle de la Luz 123, Ciudad del Sol</a></li>
+                    <li><a href="tel:+570000000000">+57 (000) 000-0000</a></li>
+                    <li><a href="mailto:info@solaris.edu.co">info@solaris.edu.co</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2026 Solaris - Proyecto Integrador Frontend · Cesde</p>
+    </footer>
+</body>
+<script src="scripts/main.js"></script>
+</html>

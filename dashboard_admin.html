@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/solaris-illustration.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_dashboard.css">
+    <title>Inicio - Solaris</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="dashboard_admin.html"><img src="images/solaris-logo.svg" alt="Solaris"></a>
+            <button class="nav-toggle" type="button">
+                <img src="images/menu-icon.svg" alt="Menú">
+            </button>
+            <ul>
+                <li><a href="dashboard_admin.html" class="active">Inicio</a></li>
+                <li><a href="users_admin.html">Usuarios</a></li>
+                <li><a href="notes_admin.html">Notas</a></li>
+                <li><a href="attendance_admin.html">Asistencias</a></li>
+                <li><a href="contact_admin.html">Contacto</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="index.html" class="btn btn-secondary" id="btnLogout">Cerrar Sesión</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <h1>Bienvenido,<br><span>Administrador</span></h1>
+                    <p>Supervisa y gestiona toda la actividad institucional desde un solo lugar.</p>
+                    <div class="hero-actions">
+                        <a href="users_admin.html" class="btn btn-primary btn-lg">Gestionar usuarios</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="images/admin-illustration.svg" alt="Panel de Administración">
+                </div>
+            </div>
+        </section>
+
+        <div class="dash-stats">
+            <article class="stat-card">
+                <span class="icon"><img src="images/users-icon.svg" alt=""></span>
+                <span id="users-amount">0</span>
+                    <p>Usuarios totales</p>
+            </article>
+            <article class="stat-card">
+                <span class="icon"><img src="images/student-icon.svg" alt=""></span>
+                <span id="students-amount">0</span>
+                    <p>Estudiantes</p>
+            </article>
+            <article class="stat-card">
+                <span class="icon"><img src="images/teacher-icon.svg" alt=""></span>
+                <span id="teachers-amount">0</span>
+                    <p>Docentes</p>
+            </article>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Gestión del sistema</h2>
+            <div class="cards">
+                    <a href="users_admin.html" class="card">
+                        <span class="icon"><img src="images/users-icon.svg" alt=""></span>
+                        <h3>Usuarios</h3>
+                        <p>Agrega, edita o elimina estudiantes, docentes y administradores del sistema.</p>
+                    </a>
+                    <a href="notes_admin.html" class="card">
+                        <span class="icon"><img src="images/notes-icon.svg" alt=""></span>
+                        <h3>Notas</h3>
+                        <p>Supervisa el registro de calificaciones de todos los estudiantes.</p>
+                    </a>
+                    <a href="attendance_admin.html" class="card">
+                        <span class="icon"><img src="images/attendance-icon.svg" alt=""></span>
+                        <h3>Asistencias</h3>
+                        <p>Consulta y gestiona los registros de asistencia de la institución.</p>
+                    </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/solaris-logo.svg" alt="Solaris Logo">
+                <p>Inspira · Aprende · Transforma</p>
+            </div>
+            <div class="footer-links">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="dashboard_admin.html">Inicio</a></li>
+                    <li><a href="users_admin.html">Usuarios</a></li>
+                    <li><a href="notes_admin.html">Notas</a></li>
+                    <li><a href="attendance_admin.html">Asistencias</a></li>
+                    <li><a href="contact_admin.html">Contacto</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="contact_admin.html">Calle de la Luz 123, Ciudad del Sol</a></li>
+                    <li><a href="tel:+570000000000">+57 (000) 000-0000</a></li>
+                    <li><a href="mailto:info@solaris.edu.co">info@solaris.edu.co</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2026 Solaris - Proyecto Integrador Frontend · Cesde</p>
+    </footer>
+</body>
+<script src="scripts/main.js"></script>
+</html>
