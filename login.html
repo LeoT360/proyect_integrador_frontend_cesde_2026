@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/solaris-illustration.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_auth.css">
+    <title>Iniciar Sesión - Solaris</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><img src="images/solaris-logo.svg" alt="Solaris"></a>
+            <button class="nav-toggle" type="button">
+                <img src="images/menu-icon.svg" alt="Menú">
+            </button>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contact.html">Contáctanos</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="register.html" class="btn btn-primary">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <figure class="auth-announcement">
+            <img src="images/login-illustration.svg" alt="">
+            <h2>Bienvenido de nuevo</h2>
+            <p>Accede a tu cuenta para gestionar tu progreso académico en Solaris.</p>
+        </figure>
+
+        <div class="auth-form">
+            
+                <h3>Iniciar Sesión</h3>
+
+                <form class="form" id="formLogin">
+                    <div class="form-input">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" placeholder="Porfirio Piedrahíta" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="doc">Documento de identidad</label>
+                        <input type="text" inputmode="numeric" id="doc" placeholder="1234567890" pattern="[0-9]{10}" maxlength="10" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="pass">Contraseña</label>
+                        <input type="password" id="pass" placeholder="••••••••" minlength="8" maxlength="20" required>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Ingresar">
+                </form>
+
+                <p class="auth-link">¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
+        </div>
+    </main>
+</body>
+<script src="scripts/main.js"></script>
+<script src="scripts/auth.js"></script>
+</html>

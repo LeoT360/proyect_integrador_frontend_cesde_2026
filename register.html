@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/solaris-illustration.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_auth.css">
+    <title>Registro - Solaris</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><img src="images/solaris-logo.svg" alt="Solaris"></a>
+            <button class="nav-toggle" type="button">
+                <img src="images/menu-icon.svg" alt="Menú">
+            </button>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contact.html">Contáctanos</a></li>
+            </ul>
+            <div class="nav-auth">
+                <a href="login.html" class="btn btn-primary">Iniciar Sesión</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-form">
+            
+                <h3>Crear cuenta</h3>
+
+                <form hreft="#" class="form" id="formRegister">
+                    <div class="form-input">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" placeholder="Porfirio Piedrahíta" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="doc">Documento de identidad</label>
+                        <input type="text" inputmode="numeric" id="doc" placeholder="1234567890" pattern="[0-9]{10}" maxlength="10" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="pass">Contraseña</label>
+                        <input type="password" id="pass" placeholder="••••••••" minlength="8" maxlength="20" required>
+                    </div>
+                    <label class="form-checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <span>Acepto los términos y condiciones de la institución Solaris.</span>
+                    </label>
+                    <input type="submit" class="btn btn-primary" id="btnRegister" value="Crear cuenta">
+                </form>
+
+                <p class="auth-link">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+            </div>
+        </div>
+
+        <figure class="auth-announcement">
+            <img src="images/register-illustration.svg" alt="">
+            <h2>Únete a nosotros</h2>
+            <p>Forma parte de la comunidad educativa más brillante y empieza a trazar tu camino.</p>
+        </figure>
+    </main>
+</body>
+<script src="scripts/main.js"></script>
+<script src="scripts/auth.js"></script>
+</html>
