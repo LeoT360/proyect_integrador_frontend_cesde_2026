@@ -1,0 +1,21 @@
+[
+  { "id": 1,
+    "name": "Solecito",
+    "document": "0000000000",
+    "password": "amanecer",
+    "role": "admin" 
+  },
+  { "id": 2,
+    "name": "Porfirio Piedrahíta",
+    "document": "0000000001",
+    "password": "porfi123",
+    "role": "teacher"
+  },
+  {
+    "id": 3,
+    "name": "Bonifacia Bermil",
+    "document": "0000000002",
+    "password": "bonia123",
+    "role": "student"
+  }
+]

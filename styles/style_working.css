@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 68px);
+    padding: 48px 24px;
+}
+
+.working-announcement {
+    max-width: 520px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+img.working-img {
+    width: 210px;
+    height: 210px;
+    filter: brightness(0) saturate(100%) invert(52%) sepia(80%) saturate(600%) hue-rotate(10deg) brightness(95%) contrast(95%);
+}
+
+.working-announcement h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .working-announcement h1 { font-size: 22px; }
+    img.working-img { width: 160px; height: 160px; }
+}
